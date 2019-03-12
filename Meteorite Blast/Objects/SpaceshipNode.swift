@@ -15,19 +15,22 @@ var spaceshipAngle: CGFloat?
 
 class SpaceshipNode: SKSpriteNode {
     
-    //  Maximum angle the spaceship can rotate
+    /// Maximum angle the spaceship can rotate
     let maximumRotationAngle: CGFloat = .pi / 4
     
-    //  Raw gyroscope input is way too much to change the spaceship's zRotation based on it.
-    //  Dividing by raw input by a limiting factor.
+    /// Raw gyroscope input is way too much to change the spaceship's zRotation based on it.
+    ///  Dividing by raw input by a limiting factor.
     let limitingFactor: CGFloat = 20.0
     
-    //  Defining spaceship orientation
+    /// Spaceship orientation.
+    ///
+    /// - Up
+    /// - Down
     enum Orientation: Int {
         case Up, Down
     }
     
-    //  Current spaceship orientation
+    /// Current spaceship orientation
     let currentOrientation: Orientation = .Up
     
     //  Swift doesn't like convenience inits used to call superclass designated inits,
@@ -70,7 +73,9 @@ class SpaceshipNode: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //  Function that provides rotation update functionality for the Spaceship node taking in gyroscope data.
+    /// Provides rotation update functionality for the Spaceship node taking in gyroscope data.
+    ///
+    /// - Parameter gyroData: raw gyroscope data
     func positionUpdate(gyroData: CGFloat) {
         
         let rotationRate = gyroData / limitingFactor
@@ -80,7 +85,10 @@ class SpaceshipNode: SKSpriteNode {
         
     }
     
-    //  This function provides a way to check whether the spaceship's zRotation would exceed the given limit.
+    /// Provides a way to check whether the spaceship's zRotation would exceed the given limit.
+    ///
+    /// - Parameter rotationRate: processed gyro data
+    /// - Returns: Bool
     private func maximumRotationExceeded(rotationRate: CGFloat) -> Bool {
         return abs(self.zRotation + rotationRate - .pi / 2) > maximumRotationAngle
     }

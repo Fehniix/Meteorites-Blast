@@ -45,7 +45,7 @@ class GameScene: SKScene {
         
     }
     
-    /// <#Description#>
+    /// Sets up the scene: instantiates nodes and adds children.
     private func setupScene() {
         
         spaceship = SpaceshipNode()
@@ -95,12 +95,9 @@ class GameScene: SKScene {
         
     }
     
-    /**
-     Spawn a meteorite if the GameLogic allows it.
-     
-     - parameters:
-        - currentTime: time passed since app launch.
-    */
+    /// Spawn a meteorite if the GameLogic allows it.
+    ///
+    /// - Parameter currentTime: time passed since app launch.
     func spawnMeteorite(_ currentTime: TimeInterval) {
         
         if !GameLogic.isMeteoriteSpawnable(currentTime) {

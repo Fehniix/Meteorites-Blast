@@ -10,6 +10,9 @@ import SpriteKit
 
 class PointsNode: SKLabelNode {
     
+    //  Pretty self-explanatory.
+    //  I would guess this class does not need commenting.
+    
     override init() {
         super.init()
         

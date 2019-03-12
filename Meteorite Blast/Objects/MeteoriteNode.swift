@@ -10,16 +10,14 @@ import SpriteKit
 
 class MeteoriteNode: SKSpriteNode {
     
-    //  Meteorite's destination point inside the spaceship's area
+    /// Meteorite's destination point inside the spaceship's area
     var destinationPoint: CGPoint = CGPoint(x: 0, y: 0)
     
-    //  Meteorite's follow action
+    /// Meteorite's follow action
     private var followAction: SKAction!
     
     convenience init() {
-        
-        
-        
+    
         self.init(
             texture: SKTexture(imageNamed: "Asteroid2"),
             color: UIColor.white,
@@ -62,15 +60,24 @@ class MeteoriteNode: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Describes the three different area screens in which it has been conceptually divided.
+    ///
+    /// - Left
+    /// - Center
+    /// - Right
     enum ScreenArea: Int {
         case Left, Center, Right
     }
     
-    //  Convenience function that starts meteorite's movement
+    /// Convenience function that starts meteorite's movement
     func moveToSpaceship() {
         self.run(followAction)
     }
     
+    /// Generates the origin point standing on the screen borders.
+    ///
+    /// - Parameter frame: scene's frame
+    /// - Returns: origin point.
     private func originPointGenerate(frame: CGRect) -> CGPoint {
         
         //  Here we are dividing the screen into three sections: left, center, right.
@@ -103,8 +110,10 @@ class MeteoriteNode: SKSpriteNode {
         }
         
     }
-    
-    //  Randomly generate the destination point for the meteor path to follow
+
+    /// Randomly generate the destination point for the meteor path to follow
+    ///
+    /// - Returns: destination point.
     private func destinationPointGenerate() -> CGPoint {
         
         //  Generating <x, y> tuple along spaceship's square x, y axis

@@ -61,10 +61,16 @@ class BulletNode: SKSpriteNode {
         fatalError("init(coder:) has not been implemented")
     }
     
+    /// Start shoot action.
     func shoot() {
         self.run(self.followAction)
     }
     
+    /// Calculates the destination point for the bullet.
+    /// This algorithm calculates exactly the minimum distance for the projectile to travel so that it gets removed from the scene as quickly as possible to optimise performance.
+    /// Warning: lots of trigonometry.
+    ///
+    /// - Returns: point on the scene's frame border.
     private func calculateTrajectory() -> CGPoint {
         
         let functionalAngle = abs(.pi / 2 - spaceshipAngle!)

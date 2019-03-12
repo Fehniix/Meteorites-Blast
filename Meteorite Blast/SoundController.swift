@@ -9,10 +9,12 @@
 import AVFoundation
 
 class SoundController {
-    var clipname: String?
-    var fileType: String?
-    var volume: Float?
-    var audioSource: AVAudioPlayer?
+    
+    //  Private shared methods.
+    private var clipname: String?
+    private var fileType: String?
+    private var volume: Float?
+    private var audioSource: AVAudioPlayer?
     
     init(clipname: String, fileType: String, volume: Float) {
         self.clipname = clipname
@@ -20,8 +22,9 @@ class SoundController {
         self.volume = volume
     }
     
-    // Main function to play our audio files
+    /// Play sound.
     func playSound() {
+        
         let path = Bundle.main.path(forResource: self.clipname, ofType: self.fileType)!
         let url = URL(fileURLWithPath: path)
         
@@ -33,12 +36,11 @@ class SoundController {
             if clipname == "backgroundMusic" {
                 audioSource?.numberOfLoops = -1
             }
-        } catch {
-            
-        }
+        } catch {}
+        
     }
     
-    // We can stop file audio with this
+    /// Stops sound.
     func stopSound(){
         audioSource?.stop()
     }
