@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B71D49B2236BACD00C6DEDD /* shootSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B71D49A2236BACD00C6DEDD /* shootSound.wav */; };
+		1B8E05FF22366F0E00CB870C /* SoundController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8E05FE22366F0E00CB870C /* SoundController.swift */; };
+		1B8E06022236770700CB870C /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B8E06012236770700CB870C /* backgroundMusic.mp3 */; };
+		4A2F15CF223176CB00AAE534 /* SensorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15CE223176CB00AAE534 /* SensorInput.swift */; };
+		4A2F15D122317D0500AAE534 /* SpaceshipNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15D022317D0500AAE534 /* SpaceshipNode.swift */; };
+		4A2F15D822326C0100AAE534 /* PsysicsSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15D722326C0100AAE534 /* PsysicsSetup.swift */; };
+		4A2F15DA223276E600AAE534 /* MeteoriteNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15D9223276E500AAE534 /* MeteoriteNode.swift */; };
+		4A2F15DC2232B8A400AAE534 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15DB2232B8A400AAE534 /* GameLogic.swift */; };
+		4A2F15DE22356E5A00AAE534 /* BulletNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15DD22356E5A00AAE534 /* BulletNode.swift */; };
+		4A2F15E022367FEE00AAE534 /* PointsNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2F15DF22367FEE00AAE534 /* PointsNode.swift */; };
+		4A2F15E2223684BE00AAE534 /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A2F15E1223684BE00AAE534 /* Minecraft.ttf */; };
+		4A436B1A223124CB008B43CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A436B19223124CB008B43CF /* AppDelegate.swift */; };
+		4A436B20223124CB008B43CF /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A436B1F223124CB008B43CF /* GameScene.swift */; };
+		4A436B22223124CB008B43CF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A436B21223124CB008B43CF /* GameViewController.swift */; };
+		4A436B25223124CB008B43CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A436B23223124CB008B43CF /* Main.storyboard */; };
+		4A436B27223124CD008B43CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A436B26223124CD008B43CF /* Assets.xcassets */; };
+		4A436B2A223124CD008B43CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A436B28223124CD008B43CF /* LaunchScreen.storyboard */; };
+		4A436B35223124CD008B43CF /* Meteorite_BlastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A436B34223124CD008B43CF /* Meteorite_BlastTests.swift */; };
+		4A436B40223124CD008B43CF /* Meteorite_BlastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A436B3F223124CD008B43CF /* Meteorite_BlastUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4A436B31223124CD008B43CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A436B0E223124CB008B43CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A436B15223124CB008B43CF;
+			remoteInfo = "Meteorite Blast";
+		};
+		4A436B3C223124CD008B43CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4A436B0E223124CB008B43CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A436B15223124CB008B43CF;
+			remoteInfo = "Meteorite Blast";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B71D49A2236BACD00C6DEDD /* shootSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shootSound.wav; sourceTree = "<group>"; };
+		1B8E05FE22366F0E00CB870C /* SoundController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundController.swift; sourceTree = "<group>"; };
+		1B8E06012236770700CB870C /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+		4A2F15CE223176CB00AAE534 /* SensorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorInput.swift; sourceTree = "<group>"; };
+		4A2F15D022317D0500AAE534 /* SpaceshipNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceshipNode.swift; sourceTree = "<group>"; };
+		4A2F15D722326C0100AAE534 /* PsysicsSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsysicsSetup.swift; sourceTree = "<group>"; };
+		4A2F15D9223276E500AAE534 /* MeteoriteNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeteoriteNode.swift; sourceTree = "<group>"; };
+		4A2F15DB2232B8A400AAE534 /* GameLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		4A2F15DD22356E5A00AAE534 /* BulletNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BulletNode.swift; sourceTree = "<group>"; };
+		4A2F15DF22367FEE00AAE534 /* PointsNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsNode.swift; sourceTree = "<group>"; };
+		4A2F15E1223684BE00AAE534 /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		4A436B16223124CB008B43CF /* Meteorite Blast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meteorite Blast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A436B19223124CB008B43CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4A436B1F223124CB008B43CF /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		4A436B21223124CB008B43CF /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		4A436B24223124CB008B43CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4A436B26223124CD008B43CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4A436B29223124CD008B43CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4A436B2B223124CD008B43CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A436B30223124CD008B43CF /* Meteorite BlastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meteorite BlastTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A436B34223124CD008B43CF /* Meteorite_BlastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteorite_BlastTests.swift; sourceTree = "<group>"; };
+		4A436B36223124CD008B43CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A436B3B223124CD008B43CF /* Meteorite BlastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Meteorite BlastUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A436B3F223124CD008B43CF /* Meteorite_BlastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meteorite_BlastUITests.swift; sourceTree = "<group>"; };
+		4A436B41223124CD008B43CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4A436B13223124CB008B43CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A436B2D223124CD008B43CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A436B38223124CD008B43CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B8E0600223676E600CB870C /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				1B71D49A2236BACD00C6DEDD /* shootSound.wav */,
+				1B8E06012236770700CB870C /* backgroundMusic.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		4A2F15CD2231766C00AAE534 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				4A2F15D9223276E500AAE534 /* MeteoriteNode.swift */,
+				4A2F15DD22356E5A00AAE534 /* BulletNode.swift */,
+				4A2F15D022317D0500AAE534 /* SpaceshipNode.swift */,
+				4A2F15DF22367FEE00AAE534 /* PointsNode.swift */,
+				4A2F15D722326C0100AAE534 /* PsysicsSetup.swift */,
+				4A2F15E1223684BE00AAE534 /* Minecraft.ttf */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		4A2F15D222317D1300AAE534 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B19223124CB008B43CF /* AppDelegate.swift */,
+			);
+			path = Meta;
+			sourceTree = "<group>";
+		};
+		4A2F15D322317D5400AAE534 /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B5022312A36008B43CF /* Model */,
+				4A436B5122312A51008B43CF /* View */,
+				4A436B4F22312A2D008B43CF /* Controller */,
+			);
+			path = MVC;
+			sourceTree = "<group>";
+		};
+		4A436B0D223124CB008B43CF = {
+			isa = PBXGroup;
+			children = (
+				4A436B18223124CB008B43CF /* Meteorite Blast */,
+				4A436B33223124CD008B43CF /* Meteorite BlastTests */,
+				4A436B3E223124CD008B43CF /* Meteorite BlastUITests */,
+				4A436B17223124CB008B43CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4A436B17223124CB008B43CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B16223124CB008B43CF /* Meteorite Blast.app */,
+				4A436B30223124CD008B43CF /* Meteorite BlastTests.xctest */,
+				4A436B3B223124CD008B43CF /* Meteorite BlastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4A436B18223124CB008B43CF /* Meteorite Blast */ = {
+			isa = PBXGroup;
+			children = (
+				1B8E0600223676E600CB870C /* Sounds */,
+				4A436B26223124CD008B43CF /* Assets.xcassets */,
+				4A2F15D222317D1300AAE534 /* Meta */,
+				4A2F15D322317D5400AAE534 /* MVC */,
+				4A2F15CD2231766C00AAE534 /* Objects */,
+				4A436B4E22312A19008B43CF /* Scenes */,
+				4A2F15DB2232B8A400AAE534 /* GameLogic.swift */,
+				1B8E05FE22366F0E00CB870C /* SoundController.swift */,
+				4A2F15CE223176CB00AAE534 /* SensorInput.swift */,
+				4A436B2B223124CD008B43CF /* Info.plist */,
+			);
+			path = "Meteorite Blast";
+			sourceTree = "<group>";
+		};
+		4A436B33223124CD008B43CF /* Meteorite BlastTests */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B34223124CD008B43CF /* Meteorite_BlastTests.swift */,
+				4A436B36223124CD008B43CF /* Info.plist */,
+			);
+			path = "Meteorite BlastTests";
+			sourceTree = "<group>";
+		};
+		4A436B3E223124CD008B43CF /* Meteorite BlastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B3F223124CD008B43CF /* Meteorite_BlastUITests.swift */,
+				4A436B41223124CD008B43CF /* Info.plist */,
+			);
+			path = "Meteorite BlastUITests";
+			sourceTree = "<group>";
+		};
+		4A436B4D2231279B008B43CF /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B23223124CB008B43CF /* Main.storyboard */,
+				4A436B28223124CD008B43CF /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4A436B4E22312A19008B43CF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B1F223124CB008B43CF /* GameScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		4A436B4F22312A2D008B43CF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B21223124CB008B43CF /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A436B5022312A36008B43CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A436B5122312A51008B43CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A436B4D2231279B008B43CF /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4A436B15223124CB008B43CF /* Meteorite Blast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A436B44223124CD008B43CF /* Build configuration list for PBXNativeTarget "Meteorite Blast" */;
+			buildPhases = (
+				4A436B12223124CB008B43CF /* Sources */,
+				4A436B13223124CB008B43CF /* Frameworks */,
+				4A436B14223124CB008B43CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Meteorite Blast";
+			productName = "Meteorite Blast";
+			productReference = 4A436B16223124CB008B43CF /* Meteorite Blast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4A436B2F223124CD008B43CF /* Meteorite BlastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A436B47223124CD008B43CF /* Build configuration list for PBXNativeTarget "Meteorite BlastTests" */;
+			buildPhases = (
+				4A436B2C223124CD008B43CF /* Sources */,
+				4A436B2D223124CD008B43CF /* Frameworks */,
+				4A436B2E223124CD008B43CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A436B32223124CD008B43CF /* PBXTargetDependency */,
+			);
+			name = "Meteorite BlastTests";
+			productName = "Meteorite BlastTests";
+			productReference = 4A436B30223124CD008B43CF /* Meteorite BlastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4A436B3A223124CD008B43CF /* Meteorite BlastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4A436B4A223124CD008B43CF /* Build configuration list for PBXNativeTarget "Meteorite BlastUITests" */;
+			buildPhases = (
+				4A436B37223124CD008B43CF /* Sources */,
+				4A436B38223124CD008B43CF /* Frameworks */,
+				4A436B39223124CD008B43CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4A436B3D223124CD008B43CF /* PBXTargetDependency */,
+			);
+			name = "Meteorite BlastUITests";
+			productName = "Meteorite BlastUITests";
+			productReference = 4A436B3B223124CD008B43CF /* Meteorite BlastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4A436B0E223124CB008B43CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Fehniix;
+				TargetAttributes = {
+					4A436B15223124CB008B43CF = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4A436B2F223124CD008B43CF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4A436B15223124CB008B43CF;
+					};
+					4A436B3A223124CD008B43CF = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 4A436B15223124CB008B43CF;
+					};
+				};
+			};
+			buildConfigurationList = 4A436B11223124CB008B43CF /* Build configuration list for PBXProject "Meteorite Blast" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4A436B0D223124CB008B43CF;
+			productRefGroup = 4A436B17223124CB008B43CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4A436B15223124CB008B43CF /* Meteorite Blast */,
+				4A436B2F223124CD008B43CF /* Meteorite BlastTests */,
+				4A436B3A223124CD008B43CF /* Meteorite BlastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4A436B14223124CB008B43CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B71D49B2236BACD00C6DEDD /* shootSound.wav in Resources */,
+				4A436B25223124CB008B43CF /* Main.storyboard in Resources */,
+				4A436B27223124CD008B43CF /* Assets.xcassets in Resources */,
+				4A2F15E2223684BE00AAE534 /* Minecraft.ttf in Resources */,
+				1B8E06022236770700CB870C /* backgroundMusic.mp3 in Resources */,
+				4A436B2A223124CD008B43CF /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A436B2E223124CD008B43CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A436B39223124CD008B43CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A436B12223124CB008B43CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A2F15D822326C0100AAE534 /* PsysicsSetup.swift in Sources */,
+				1B8E05FF22366F0E00CB870C /* SoundController.swift in Sources */,
+				4A436B20223124CB008B43CF /* GameScene.swift in Sources */,
+				4A2F15DE22356E5A00AAE534 /* BulletNode.swift in Sources */,
+				4A2F15DC2232B8A400AAE534 /* GameLogic.swift in Sources */,
+				4A436B22223124CB008B43CF /* GameViewController.swift in Sources */,
+				4A2F15CF223176CB00AAE534 /* SensorInput.swift in Sources */,
+				4A436B1A223124CB008B43CF /* AppDelegate.swift in Sources */,
+				4A2F15D122317D0500AAE534 /* SpaceshipNode.swift in Sources */,
+				4A2F15DA223276E600AAE534 /* MeteoriteNode.swift in Sources */,
+				4A2F15E022367FEE00AAE534 /* PointsNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A436B2C223124CD008B43CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A436B35223124CD008B43CF /* Meteorite_BlastTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A436B37223124CD008B43CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A436B40223124CD008B43CF /* Meteorite_BlastUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A436B32223124CD008B43CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A436B15223124CB008B43CF /* Meteorite Blast */;
+			targetProxy = 4A436B31223124CD008B43CF /* PBXContainerItemProxy */;
+		};
+		4A436B3D223124CD008B43CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4A436B15223124CB008B43CF /* Meteorite Blast */;
+			targetProxy = 4A436B3C223124CD008B43CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4A436B23223124CB008B43CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A436B24223124CB008B43CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4A436B28223124CD008B43CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4A436B29223124CD008B43CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4A436B42223124CD008B43CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4A436B43223124CD008B43CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4A436B45223124CD008B43CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPQ7G3WJHV;
+				INFOPLIST_FILE = "Meteorite Blast/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fehniix.Meteorite-Blast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4A436B46223124CD008B43CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPQ7G3WJHV;
+				INFOPLIST_FILE = "Meteorite Blast/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fehniix.Meteorite-Blast";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4A436B48223124CD008B43CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPQ7G3WJHV;
+				INFOPLIST_FILE = "Meteorite BlastTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fehniix.Meteorite-BlastTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteorite Blast.app/Meteorite Blast";
+			};
+			name = Debug;
+		};
+		4A436B49223124CD008B43CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPQ7G3WJHV;
+				INFOPLIST_FILE = "Meteorite BlastTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fehniix.Meteorite-BlastTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meteorite Blast.app/Meteorite Blast";
+			};
+			name = Release;
+		};
+		4A436B4B223124CD008B43CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPQ7G3WJHV;
+				INFOPLIST_FILE = "Meteorite BlastUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fehniix.Meteorite-BlastUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meteorite Blast";
+			};
+			name = Debug;
+		};
+		4A436B4C223124CD008B43CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QPQ7G3WJHV;
+				INFOPLIST_FILE = "Meteorite BlastUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Fehniix.Meteorite-BlastUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Meteorite Blast";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4A436B11223124CB008B43CF /* Build configuration list for PBXProject "Meteorite Blast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A436B42223124CD008B43CF /* Debug */,
+				4A436B43223124CD008B43CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A436B44223124CD008B43CF /* Build configuration list for PBXNativeTarget "Meteorite Blast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A436B45223124CD008B43CF /* Debug */,
+				4A436B46223124CD008B43CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A436B47223124CD008B43CF /* Build configuration list for PBXNativeTarget "Meteorite BlastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A436B48223124CD008B43CF /* Debug */,
+				4A436B49223124CD008B43CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4A436B4A223124CD008B43CF /* Build configuration list for PBXNativeTarget "Meteorite BlastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4A436B4B223124CD008B43CF /* Debug */,
+				4A436B4C223124CD008B43CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4A436B0E223124CB008B43CF /* Project object */;
+}
